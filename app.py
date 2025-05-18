@@ -27,12 +27,14 @@ def analyze_keywords(titles):
 # Plot keywords function
 def plot_keywords(keywords_data):
     colors = {
+        'ICRA 2022': 'yellow',
         'ICRA 2023': 'red',
         'ICRA 2024': 'orange',
+        'ICRA 2025': 'black',
+
         'IROS 2022': 'blue',
         'IROS 2023': 'lightblue',
         'IROS 2024': 'purple',
-        'ICRA 2022': 'yellow'
     }
 
     data_for_plotting = defaultdict(lambda: defaultdict(int))
@@ -68,12 +70,15 @@ def plot_keywords(keywords_data):
 def process_selection(selected_combinations):
     # Define paths to your CSV files
     file_paths = {
-        "ICRA 2022": "path/to/ICRA-2022.csv",
-        "ICRA 2023": "path/to/ICRA-2023.csv",
-        "ICRA 2024": "path/to/ICRA-2024.csv",
-        "IROS 2022": "path/to/IROS-2022.csv",
-        "IROS 2023": "path/to/IROS-2023.csv",
-        "IROS 2024": "path/to/IROS-2024.csv"
+        "ICRA 2022": "conferences_lists/ICRA-2022.csv",
+        "ICRA 2023": "conferences_lists/ICRA-2023.csv",
+        "ICRA 2024": "conferences_lists/ICRA-2024.csv",
+        "ICRA 2024": "conferences_lists/ICRA-2025.csv",
+
+
+        "IROS 2022": "conferences_lists/IROS-2022.csv",
+        "IROS 2023": "conferences_lists/IROS-2023.csv",
+        "IROS 2024": "conferences_lists/IROS-2024.csv"
     }
 
     keywords_data = {}
@@ -89,7 +94,7 @@ with gr.Blocks() as app:
     with gr.Row():
         selection = gr.CheckboxGroup(
             label="Select Conference-Year",
-            choices=["ICRA 2022", "ICRA 2023", "ICRA 2024", "IROS 2022", "IROS 2023", "IROS 2024"]
+            choices=["ICRA 2022", "ICRA 2023", "ICRA 2024","ICRA 2025", "IROS 2022", "IROS 2023", "IROS 2024"]
         )
         submit_button = gr.Button("Generate Plot")
 
