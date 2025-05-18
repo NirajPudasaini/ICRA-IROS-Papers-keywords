@@ -10,6 +10,13 @@ from nltk.tokenize import word_tokenize
 nltk.download('punkt')
 nltk.download('stopwords')
 
+import nltk
+
+# make sure the tokenizer data is there
+nltk.download("punkt")       # you already have this
+nltk.download("punkt_tab")   # THIS line will fetch the missing punkt_tab data
+nltk.download("stopwords")
+
 # Load titles from CSV
 def load_titles_from_csv(file_path):
     df = pd.read_csv(file_path, header=None)
@@ -73,8 +80,7 @@ def process_selection(selected_combinations):
         "ICRA 2022": "conferences_lists/ICRA-2022.csv",
         "ICRA 2023": "conferences_lists/ICRA-2023.csv",
         "ICRA 2024": "conferences_lists/ICRA-2024.csv",
-        "ICRA 2024": "conferences_lists/ICRA-2025.csv",
-
+        "ICRA 2025": "conferences_lists/ICRA-2025.csv",
 
         "IROS 2022": "conferences_lists/IROS-2022.csv",
         "IROS 2023": "conferences_lists/IROS-2023.csv",
