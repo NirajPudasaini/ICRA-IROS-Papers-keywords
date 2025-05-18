@@ -1,4 +1,4 @@
-# ICRA-IROS-Keyword-Visualization-Discover-Trends-in-Robotics-Research
+# ICRA-IROS-Papers-Keywords
  This interactive data visualization tool allows you to explore and analyze the most common keywords in research papers from the **ICRA** and **IROS** conferences. Gain insights into the evolving trends and focus areas in robotics research by selecting different conference-year combinations.
 
 ### Check out the Gradio interface [here](https://huggingface.co/spaces/NirajPudasaini/Robotics-Research-Keyword-Visualization-ICRA-and-IROS).
@@ -27,9 +27,4 @@ If you use this code or data in your research, please cite:
   url = {https://github.com/NirajPudasaini/ICRA-IROS-Keyword-Visualization-Discover-Trends-in-Robotics-Research},
   langid = {en}
 }
-```
-
-For attribution, please cite this work as:
-```
-Pudasaini, Niraj. 2024. “ICRA & IROS Keyword Visualization: Discover Trends in Robotics Research.” July 30, 2024. https://github.com/NirajPudasaini/ICRA-IROS-Keyword-Visualization-Discover-Trends-in-Robotics-Research.
 ```
